@@ -21,7 +21,7 @@ def main_menu_keyboard(language, role, custom_buttons):
     keyboard.add(types.InlineKeyboardButton(text="❓ " + TEXT[language]["faq"], callback_data="faq"))
     keyboard.add(types.InlineKeyboardButton(text="✍️ " + TEXT[language]["leave_review"], callback_data="leave_review"))
     keyboard.add(types.InlineKeyboardButton(text="📋 " + TEXT[language]["view_reviews"], callback_data="view_reviews"))
-    keyboard.add(types.InlineKeyboardButton(text=TEXT[language]["show_map"], url="https://your-site.com/college_map.html"))  # Новая кнопка
+    keyboard.add(types.InlineKeyboardButton(text=TEXT[language]["show_map"], url="https://adonis57.github.io/okolegius/college_map.html"))
     for name, callback in custom_buttons.items():
         keyboard.add(types.InlineKeyboardButton(text=name, callback_data=callback))
     if role == "moderator":
