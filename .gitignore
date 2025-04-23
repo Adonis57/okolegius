@@ -1,0 +1,10 @@
+echo "config.py" >> .gitignore
+# Игнорировать базу данных
+university_bot.db
+
+# Игнорировать медиафайлы
+media/
+
+# Игнорировать Python-кэш
+__pycache__/
+*.pyc
